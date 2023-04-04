@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+         
+            <div class="form-group">
+              <label for="name">id</label>
+              <input type="text" id="id" class="form-control" ngModel name="id" required #slo="ngModel">
+              <span *ngIf="slo.touched&&!slo.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+              <label for="ideology">EventName</label>
+              <textarea id="EventName" class="form-control" ngModel name="EventName" required cols="5" #strat="ngModel">
+              </textarea>
+              <span *ngIf="strat.touched&&!strat.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president"> Date</label>
+                <textarea id=" Date" class="form-control" ngModel name=" Date" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president"> Time</label>
+                <textarea id=" Time" class="form-control" ngModel name=" Time" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president"> Event_type</label>
+                <textarea id=" Event_type" class="form-control" ngModel name=" Event_type" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president"> Event_description</label>
+                <textarea id=" Event_description" class="form-control" ngModel name=" Event_description" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president"> Event_Attendees</label>
+                <textarea id=" Event_Attendees" class="form-control" ngModel name=" Event_Attendees" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president">Event_host</label>
+                <textarea id="Event_host" class="form-control" ngModel name="Event_host" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president">Event_sponsonrs</label>
+                <textarea id="Event_sponsonrs" class="form-control" ngModel name="Event_sponsonrs" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president">Media_coverage</label>
+                <textarea id="Media_coverage" class="form-control" ngModel name="Media_coverage" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+            <div class="form-group">
+                <label for="president">CandidataId</label>
+                <textarea id="CandidataId" class="form-control" ngModel name="CandidataId" required cols="5" #goal="ngModel">
+                </textarea>
+              <span *ngIf="goal.touched&&!goal.valid">This feild is required</span>
+            </div>
+          <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+        </form>
+      </div>
+    </div>

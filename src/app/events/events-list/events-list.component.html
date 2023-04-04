@@ -1,0 +1,34 @@
+<table class="table table-hover table-striped text-center p-3">
+    <thead>
+        <tr>
+         <th>id</th>
+         <th> EventName</th>
+         <th> Date</th>
+         <th> Time</th>
+         <th>  Event_type</th>
+         <th>Event_description</th>
+         <th>Event_Attendees</th>
+         <th> Event_host</th>
+         <th> Event_sponsonrs</th>
+         <th>Media_coverage</th>
+          <th>CandidataId</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let event of data">
+            <td>{{event.id}}</td>
+            <td>{{event.EventName}}</td>
+            <td>{{event.Date}}</td>
+            <td>{{event.Time}}</td>
+            <td>{{event.Event_type}}</td>
+            <td>{{event.Event_description}}</td>
+            <td>{{event.Event_Attendees}}</td>
+            <td>{{event.Event_host}}</td>
+            <td>{{event.Event_sponsonrs}}</td>
+            <td>{{event.Media_coverage}}</td>
+            <td>{{event.CandidataId}}</td>
+          </tr>
+    </tbody>
+</table>
+  
